@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Baju Kece</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --light: #f4f4f4;
+            --success: #25d366;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--primary);
+        }
+
+        header {
+            background-color: white;
+            padding: 1rem 5%;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin: 0 0 0.5rem 0;
+            font-weight: bold;
+        }
+
+        .price {
+            color: var(--accent);
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .btn-order {
+            display: block;
+            background-color: var(--success);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .btn-order:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Koleksi Musim Panas 2026</h1>
+    <p>Pilih gaya favoritmu dan pesan langsung lewat WhatsApp</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="blouse.webp" alt="blouse polos">
+        <div class="card-content">
+            <div class="card-title">blaose pink</div>
+            <div class="price">Rp 125.000</div>
+            <a href="https://wa.me/6281380954757?text=Halo,%20saya%20mau%20pesan%20blouse%20pink" class="btn-order">Pesan via WA</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="jaketwnt.jpg" alt="jaket wanita">
+        <div class="card-content">
+            <div class="card-title">jaket wanita coklat</div>
+            <div class="price">Rp 210.000</div>
+            <a href="https://wa.me/628380555841?text=Halo,%20saya%20mau%20pesan%20jaket%20wanita%20coklat" class="btn-order">Pesan via WA</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=500&q=80" alt="Jaket">
+        <div class="card-content">
+            <div class="card-title">Jaket Kulit Sintetis</div>
+            <div class="price">Rp 450.000</div>
+            <a href="https://wa.me/6285691571742?text=Halo,%20saya%20mau%20pesan%20Jaket%20Kulit" class="btn-order">Pesan via WA</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Katalog Baju Kece. Dibuat dengan cinta.
+</footer>
+
+</body>
+</html>
